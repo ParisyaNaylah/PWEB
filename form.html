@@ -26,6 +26,18 @@
                 nrp.focus();
                 return false;
             }
+
+            if (nama.value.length < 4) {
+                alert("Nama harus lebih dari 3 huruf !");
+                nama.focus();
+                return false;
+            }
+
+            if (isNaN(umur.value) == true) {
+                alert("Umur angka !");
+                umur.focus();
+                return false;
+            }
         }
     </script>
 </head>
